@@ -47,33 +47,36 @@
     padding:6.5rem 1.5rem 4.5rem;
     text-align:center;
     background:
-      linear-gradient(165deg, rgba(16,37,56,.92), rgba(20,97,88,.88)),
-      url('images/og-cover.jpg') center/cover no-repeat;
-    color:#f3f6f3;
+      linear-gradient(180deg, rgba(10,24,38,.4) 0%, rgba(10,24,38,.3) 35%, rgba(10,24,38,.72) 100%),
+      url('images/og-cover.jpg') center 38%/cover no-repeat;
+    color:#fff;
   }
   .hero .eyebrow{
     letter-spacing:.3em;
     font-size:.78rem;
     text-transform:uppercase;
-    color:#9fd8cf;
+    color:#bdf0e6;
     margin-bottom:1.2rem;
+    text-shadow:0 1px 8px rgba(0,0,0,.55);
   }
   .hero h1{
     font-size:clamp(1.7rem, 4.2vw, 2.9rem);
     margin:0 0 1.1rem;
     font-weight:700;
-    text-shadow:0 2px 14px rgba(0,0,0,.35);
+    text-shadow:0 2px 18px rgba(0,0,0,.65), 0 1px 3px rgba(0,0,0,.8);
   }
   .hero p{
     max-width:680px;
     margin:0 auto;
     font-size:1.05rem;
-    color:#e4ece6;
+    color:#f1f5f2;
+    text-shadow:0 1px 10px rgba(0,0,0,.6);
   }
   .hero .meta{
     margin-top:1.8rem;
     font-size:.85rem;
-    color:#bcd4ce;
+    color:#d6e8e2;
+    text-shadow:0 1px 8px rgba(0,0,0,.6);
   }
 
   .wrap{max-width:920px;margin:0 auto;padding:0 1.5rem;}
@@ -113,6 +116,21 @@
     border-radius:8px;
     padding:1rem 1.3rem;
     line-height:1.7;
+  }
+
+  figure{margin:2rem 0 0;}
+  figure img{
+    width:100%;
+    border-radius:10px;
+    display:block;
+    box-shadow:0 14px 34px rgba(16,37,56,.18);
+  }
+  figcaption{
+    font-size:.82rem;
+    color:#7c8a83;
+    text-align:center;
+    margin-top:.7rem;
+    font-style:italic;
   }
 
   section{padding:4rem 0;}
@@ -353,6 +371,10 @@
     <span class="tag">01 · 提案是什麼</span>
     <h2>300公頃要怎麼分——市府端出的構想</h2>
     <p>蔣萬安提出的構想涵蓋「松山機場及周邊約300公頃」，初步分配為：</p>
+    <figure>
+      <img src="images/og-cover.jpg" alt="示意圖：左側為機場跑道，右側轉變為現代科技園區建築群與綠地公園">
+      <figcaption>示意圖（AI生成，非官方規劃效果圖）：機場跑道與AI科技園區、公園綠地並置的概念意象</figcaption>
+    </figure>
     <table>
       <tr><th>用途</th><th>提案面積</th><th>備註</th></tr>
       <tr><td>AI產業聚落</td><td>100公頃</td><td>市府稱將銜接內科、南港的科技產業聚落</td></tr>
