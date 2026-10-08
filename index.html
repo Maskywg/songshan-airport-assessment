@@ -33,6 +33,9 @@
     --ink:#20262b;
     --ink-soft:#54616b;
     --line:#dde3dd;
+    --series-ai:#2a78d6;
+    --series-housing:#eb6834;
+    --series-park:#1baf7a;
   }
   *{box-sizing:border-box;}
   body{
@@ -125,6 +128,47 @@
     border-radius:8px;
     padding:1rem 1.3rem;
     line-height:1.7;
+  }
+
+  .chart-figure{margin:1.8rem 0 2.2rem;}
+  .bars{display:flex; flex-direction:column; gap:.9rem;}
+  .bar-row{
+    display:grid;
+    grid-template-columns:11em 1fr 4.6em;
+    align-items:center;
+    gap:.8rem;
+  }
+  .bar-label{
+    font-size:.86rem;
+    color:var(--ink);
+    text-align:right;
+    font-weight:600;
+  }
+  .bar-track{
+    height:22px;
+    background:var(--cream);
+    border-radius:2px;
+    overflow:hidden;
+  }
+  .bar-fill{
+    display:block;
+    height:100%;
+    border-radius:0 4px 4px 0;
+  }
+  .bar-value{
+    font-size:.86rem;
+    color:var(--ink-soft);
+    font-variant-numeric:tabular-nums;
+  }
+  .chart-figure figcaption{
+    text-align:left;
+    margin-top:1rem;
+  }
+  .chart-figure figcaption a{color:var(--teal-deep);}
+  @media (max-width:560px){
+    .bar-row{grid-template-columns:1fr; row-gap:.3rem;}
+    .bar-label{text-align:left;}
+    .bar-value{justify-self:end;}
   }
 
   figure{margin:2rem 0 0;}
@@ -382,6 +426,26 @@
     <span class="tag">01 · 提案是什麼</span>
     <h2>300公頃要怎麼分——市府端出的構想</h2>
     <p>蔣萬安提出的構想涵蓋「松山機場及周邊約300公頃」，初步分配為：</p>
+    <figure class="chart-figure">
+      <div class="bars" role="img" aria-label="松山機場原址300公頃分區構想：AI產業聚落100公頃、住宅及支援性公共設施90公頃、公園綠地110公頃">
+        <div class="bar-row">
+          <span class="bar-label">AI產業聚落</span>
+          <span class="bar-track"><span class="bar-fill" style="width:90.9%; background:var(--series-ai)"></span></span>
+          <span class="bar-value">100 公頃</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">住宅及支援性公共設施</span>
+          <span class="bar-track"><span class="bar-fill" style="width:81.8%; background:var(--series-housing)"></span></span>
+          <span class="bar-value">90 公頃</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">公園綠地</span>
+          <span class="bar-track"><span class="bar-fill" style="width:100%; background:var(--series-park)"></span></span>
+          <span class="bar-value">110 公頃</span>
+        </div>
+      </div>
+      <figcaption>依台北市政府2026年10月8日記者會公布數字繪製，合計約300公頃。記者會原始簡報圖卡可見<a href="https://udn.com/news/story/7314/9802116" target="_blank" rel="noopener">聯合新聞網報導</a>。</figcaption>
+    </figure>
     <figure>
       <img src="images/og-cover.jpg" alt="示意圖：左側為機場跑道，右側轉變為現代科技園區建築群與綠地公園">
       <figcaption>示意圖（AI生成，非官方規劃效果圖）：機場跑道與AI科技園區、公園綠地並置的概念意象</figcaption>
