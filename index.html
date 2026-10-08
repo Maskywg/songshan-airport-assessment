@@ -47,9 +47,18 @@
     padding:6.5rem 1.5rem 4.5rem;
     text-align:center;
     background:
-      linear-gradient(180deg, rgba(10,24,38,.4) 0%, rgba(10,24,38,.3) 35%, rgba(10,24,38,.72) 100%),
+      linear-gradient(180deg, rgba(10,24,38,.12) 0%, rgba(10,24,38,.05) 30%, rgba(10,24,38,.4) 100%),
       url('images/og-cover.jpg') center 38%/cover no-repeat;
     color:#fff;
+  }
+  .hero-panel{
+    display:inline-block;
+    max-width:720px;
+    background:rgba(10,24,38,.52);
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(3px);
+    border-radius:18px;
+    padding:2.4rem 2.2rem;
   }
   .hero .eyebrow{
     letter-spacing:.3em;
@@ -57,26 +66,26 @@
     text-transform:uppercase;
     color:#bdf0e6;
     margin-bottom:1.2rem;
-    text-shadow:0 1px 8px rgba(0,0,0,.55);
+    text-shadow:0 1px 4px rgba(0,0,0,.3);
   }
   .hero h1{
     font-size:clamp(1.7rem, 4.2vw, 2.9rem);
     margin:0 0 1.1rem;
     font-weight:700;
-    text-shadow:0 2px 18px rgba(0,0,0,.65), 0 1px 3px rgba(0,0,0,.8);
+    text-shadow:0 2px 10px rgba(0,0,0,.4);
   }
   .hero p{
     max-width:680px;
     margin:0 auto;
     font-size:1.05rem;
     color:#f1f5f2;
-    text-shadow:0 1px 10px rgba(0,0,0,.6);
+    text-shadow:0 1px 4px rgba(0,0,0,.3);
   }
   .hero .meta{
     margin-top:1.8rem;
     font-size:.85rem;
     color:#d6e8e2;
-    text-shadow:0 1px 8px rgba(0,0,0,.6);
+    text-shadow:0 1px 4px rgba(0,0,0,.3);
   }
 
   .wrap{max-width:920px;margin:0 auto;padding:0 1.5rem;}
@@ -339,10 +348,12 @@
 <body>
 
 <div class="hero">
-  <div class="eyebrow">SONGSHAN AIRPORT RELOCATION · 2026 可行性評估</div>
-  <h1>松山機場遷建與AI園區<br>一次全面可行性評估</h1>
-  <p>2026年10月8日，台北市府宣布規劃松山機場遷移、原址300公頃打造AI產業聚落、住宅與公園。本頁刻意不以藍綠白陣營或特定政治人物的立場切入，而是把這個議題當成一道長期的城市戰略與公共治理問題來拆解：環保、交通、住宅、軍事、獲利、戰略六大面向逐一檢視，並回顧三十年來這個議題在不同執政團隊手中反覆出現又反覆落空的歷史模式，作為判斷這次提案成熟度的參照基準。</p>
-  <div class="meta">整理日期：2026年10月8日 · 推論不等於官方結論 · 聚焦長遠戰略，非政治表態</div>
+  <div class="hero-panel">
+    <div class="eyebrow">SONGSHAN AIRPORT RELOCATION · 2026 可行性評估</div>
+    <h1>松山機場遷建與AI園區<br>一次全面可行性評估</h1>
+    <p>2026年10月8日，台北市府宣布規劃松山機場遷移、原址300公頃打造AI產業聚落、住宅與公園。本頁刻意不以藍綠白陣營或特定政治人物的立場切入，而是把這個議題當成一道長期的城市戰略與公共治理問題來拆解：環保、交通、住宅、軍事、獲利、戰略六大面向逐一檢視，並回顧三十年來這個議題在不同執政團隊手中反覆出現又反覆落空的歷史模式，作為判斷這次提案成熟度的參照基準。</p>
+    <div class="meta">整理日期：2026年10月8日 · 推論不等於官方結論 · 聚焦長遠戰略，非政治表態</div>
+  </div>
 </div>
 
 <nav class="toc">
