@@ -160,6 +160,15 @@
     color:var(--ink-soft);
     font-variant-numeric:tabular-nums;
   }
+  .map-figure{margin:2rem 0;}
+  .map-figure svg{width:100%; height:auto; display:block; background:var(--cream); border-radius:10px; border:1px solid var(--line);}
+  .map-figure figcaption{
+    text-align:left;
+    margin-top:.9rem;
+    font-size:.85rem;
+    color:#6b7a73;
+    font-style:italic;
+  }
   .chart-figure figcaption{
     text-align:left;
     margin-top:1rem;
@@ -765,6 +774,92 @@
       <span class="label">還有一種選項：不找新地，把舊地蓋高</span>
       <p>內湖、南港的科技園區有不少建築是1990年代興建的中低樓層廠辦，透過都市更新或危老重建提高容積，理論上可以在不動用任何新土地的情況下增加樓地板面積。這個選項目前在市府的公開論述中幾乎沒有被提及，卻是「到底有沒有地」這場爭論裡，一個常被忽略的現成工具。</p>
     </div>
+    <h3>北部AI廊道：兩種版本的同一張地圖</h3>
+    <p>把前面談過的北士科、社子島、松機、內科、南軟、淡海科學城攤開來看，會發現一個有趣的現象：市府與在野陣營，其實都在講同一個「北部AI廊道」的故事，只是地圖上有一個節點的內容不一樣。市府甚至為此設立了官方網站，喊出「AI黃金世紀，從臺北開始」的口號。［58］</p>
+    <figure class="map-figure">
+      <svg viewBox="0 0 680 460" role="img" aria-label="北部AI廊道地理位置示意圖，標示淡海科學城、社子島、北士科、松山機場AI園區、內科、南軟，以及蘆洲五股、中永和、土城樹林等延伸端點">
+        <defs>
+          <marker id="corridorArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </marker>
+        </defs>
+        <rect x="0" y="0" width="160" height="110" fill="var(--teal)" opacity="0.1"/>
+        <text x="14" y="24" font-size="12" fill="var(--ink-soft)">台灣海峽</text>
+        <path d="M70,60 Q120,95 178,148 Q195,190 210,280 Q230,340 255,410" fill="none" stroke="var(--teal)" stroke-width="9" stroke-linecap="round" opacity="0.35"/>
+        <path d="M600,250 Q500,155 480,140 Q420,155 380,172 Q280,165 230,150 Q195,148 178,148" fill="none" stroke="var(--teal)" stroke-width="9" stroke-linecap="round" opacity="0.35"/>
+        <path d="M330,415 Q290,412 255,410" fill="none" stroke="var(--teal)" stroke-width="7" stroke-linecap="round" opacity="0.3"/>
+        <path d="M165,395 Q210,404 255,410" fill="none" stroke="var(--teal)" stroke-width="7" stroke-linecap="round" opacity="0.3"/>
+        <text x="420" y="195" font-size="12" fill="var(--ink-soft)">基隆河</text>
+        <text x="215" y="235" font-size="12" fill="var(--ink-soft)">淡水河</text>
+        <g stroke="var(--navy)" stroke-width="1.3">
+          <line x1="85" y1="72" x2="210" y2="100" marker-end="url(#corridorArrow)"/>
+          <line x1="245" y1="112" x2="355" y2="168" marker-end="url(#corridorArrow)" stroke-dasharray="4 3"/>
+          <line x1="400" y1="185" x2="458" y2="150" marker-end="url(#corridorArrow)"/>
+          <line x1="490" y1="148" x2="548" y2="205" marker-end="url(#corridorArrow)"/>
+          <line x1="200" y1="165" x2="130" y2="212" marker-end="url(#corridorArrow)"/>
+          <line x1="365" y1="198" x2="340" y2="305" marker-end="url(#corridorArrow)"/>
+          <line x1="315" y1="325" x2="205" y2="368" marker-end="url(#corridorArrow)"/>
+        </g>
+        <g>
+          <circle cx="70" cy="65" r="10" fill="var(--green)" stroke="#2d6b45" stroke-width="1"/>
+          <text x="86" y="60" font-size="13" font-weight="600" fill="var(--ink)">淡海科學城</text>
+          <text x="86" y="78" font-size="11" fill="var(--ink-soft)">不碰松機路線</text>
+        </g>
+        <g>
+          <circle cx="178" cy="148" r="9" fill="var(--green)" stroke="#2d6b45" stroke-width="1"/>
+          <text x="150" y="130" font-size="13" font-weight="600" fill="var(--ink)" text-anchor="end">社子島</text>
+          <text x="150" y="166" font-size="11" fill="var(--ink-soft)" text-anchor="end">另一替代地</text>
+        </g>
+        <g>
+          <circle cx="230" cy="105" r="10" fill="var(--teal)" stroke="var(--teal-deep)" stroke-width="1"/>
+          <text x="246" y="98" font-size="13" font-weight="600" fill="var(--ink)">北士科</text>
+          <text x="246" y="116" font-size="11" fill="var(--ink-soft)">輝達已進駐</text>
+        </g>
+        <g>
+          <circle cx="378" cy="180" r="12" fill="var(--amber)" stroke="var(--amber-deep)" stroke-width="1.5"/>
+          <text x="394" y="172" font-size="13" font-weight="600" fill="var(--ink)">松機・台北AI園區</text>
+          <text x="394" y="190" font-size="11" fill="var(--ink-soft)">爭議核心節點</text>
+        </g>
+        <g>
+          <circle cx="478" cy="138" r="10" fill="var(--teal)" stroke="var(--teal-deep)" stroke-width="1"/>
+          <text x="494" y="130" font-size="13" font-weight="600" fill="var(--ink)">內科</text>
+          <text x="494" y="148" font-size="11" fill="var(--ink-soft)">既有園區</text>
+        </g>
+        <g>
+          <circle cx="558" cy="212" r="10" fill="var(--teal)" stroke="var(--teal-deep)" stroke-width="1"/>
+          <text x="574" y="205" font-size="13" font-weight="600" fill="var(--ink)">南軟</text>
+          <text x="574" y="223" font-size="11" fill="var(--ink-soft)">既有園區</text>
+        </g>
+        <g>
+          <circle cx="110" cy="225" r="8" fill="#8a7a68" stroke="#5a4d43" stroke-width="1"/>
+          <text x="60" y="208" font-size="13" font-weight="600" fill="var(--ink)" text-anchor="end">蘆洲・五股</text>
+          <text x="60" y="226" font-size="11" fill="var(--ink-soft)" text-anchor="end">新北延伸端點</text>
+        </g>
+        <g>
+          <circle cx="340" cy="320" r="8" fill="#8a7a68" stroke="#5a4d43" stroke-width="1"/>
+          <text x="356" y="313" font-size="13" font-weight="600" fill="var(--ink)">中永和</text>
+          <text x="356" y="331" font-size="11" fill="var(--ink-soft)">Y軸延伸端點</text>
+        </g>
+        <g>
+          <circle cx="165" cy="395" r="8" fill="#8a7a68" stroke="#5a4d43" stroke-width="1"/>
+          <text x="100" y="388" font-size="13" font-weight="600" fill="var(--ink)" text-anchor="end">土城・樹林</text>
+          <text x="100" y="406" font-size="11" fill="var(--ink-soft)" text-anchor="end">大漢溪捷運延伸</text>
+        </g>
+        <g transform="translate(470,330)">
+          <circle cx="8" cy="0" r="6" fill="var(--green)"/><text x="20" y="4" font-size="11" fill="var(--ink-soft)">替代方案</text>
+          <circle cx="8" cy="22" r="6" fill="var(--teal)"/><text x="20" y="26" font-size="11" fill="var(--ink-soft)">既有園區</text>
+          <circle cx="8" cy="44" r="6" fill="var(--amber)"/><text x="20" y="48" font-size="11" fill="var(--ink-soft)">爭議節點</text>
+          <circle cx="8" cy="66" r="6" fill="#8a7a68"/><text x="20" y="70" font-size="11" fill="var(--ink-soft)">延伸端點</text>
+        </g>
+      </svg>
+      <figcaption>簡化水系示意圖，節點依大致地理方位標示，非精確地理座標。虛線表示北士科到松機這段屬於爭議中的連結，不是已經定案的路線。</figcaption>
+    </figure>
+    <p>藍營版本（蔣萬安、新北市長候選人李四川）把這條廊道一路拉進新北：李四川提出用<strong>蘆社大橋、淡北快線</strong>把北士科的輝達紅利延伸到淡水、五股、蘆洲；<strong>大漢溪捷運縱貫線</strong>串起土城、樹林；再透過<strong>中和光復線延伸</strong>接新店、中永和到未來的台北AI園區——這條延伸李四川聲稱自己8月就提過，比蔣萬安10月8日記者會還早。他的說法是「南有巨蛋城、北有科學城」，單一園區接不住整條AI供應鏈，必須打「團體戰」。［55、56、59］</p>
+    <p>綠營版本（新北市長候選人蘇巧慧）則是把松機這個節點直接替換成淡海科學城，其餘的北士科、內科、南軟維持不變。值得注意的是，連科技業界也有人加入這一邊：和碩董事長<strong>童子賢</strong>公開反對剷平松機，主張台北已經太擁擠，AI產業應該考慮淡海新市鎮，而不是繼續往市中心塞。［57］</p>
+    <div class="callout">
+      <span class="label">同一條廊道，兩種終點</span>
+      <p>這張地圖真正有意思的地方是：<strong>沒有人反對把北士科、內科、南軟、新北串成一條AI廊道</strong>，連藍綠雙方新北市長候選人都在搶這個框架的主導權。真正的分歧，從頭到尾都只有地圖中間那一個節點——松山機場要不要變成這條廊道的一部分。把這條廊道的共識講清楚，其實更凸顯了松機存廢這個單一問題，才是整個計畫能不能定案的關鍵，而不是「要不要蓋AI廊道」本身。</p>
+    </div>
     <h3>土地增值不是政府的淨收入</h3>
     <p>土地出售或出租確實能幫市府籌措部分建設資金，但必須扣除航空設施拆遷、軍方與空勤安置、跨河道路與捷運建設等全部支出，才能得到真正的淨效益；而且這筆淨效益最終由誰取得（市庫、開發商、或原有地主），也會影響這個方案對台北市民整體是否划算的判斷。</p>
     <div class="callout">
@@ -987,6 +1082,11 @@
         <li>國際民航組織，《Annex 14 to the Convention on International Civil Aviation, Volume II — Heliports》，直升機場進場面／起飛爬升面設計標準。<a href="https://www.peter2000.co.uk/aviation/icao-documents/AN14_V2_cons.pdf" target="_blank" rel="noopener">icao Annex 14 Vol. II</a></li>
         <li>自由時報，〈松機遷移總統專機怎起降？蔣萬安：川普搭直升機轉空軍1號〉，2026-10-09。<a href="https://news.ltn.com.tw/news/politics/breakingnews/5600943" target="_blank" rel="noopener">news.ltn.com.tw</a></li>
         <li>ETtoday，〈拋遷松機「松指部」怎麼遷？ 蔣萬安：沒戰鬥機、救災有直升機〉，2026-10-08。<a href="https://www.ettoday.net/news/20261008/3251231.htm" target="_blank" rel="noopener">ettoday.net</a></li>
+        <li>自由時報，〈蔣萬安要拆松機建AI產業園區 李四川：連結新北共築AI產業廊帶〉，2026-10-08。<a href="https://news.ltn.com.tw/news/NewTaipei/breakingnews/5600713" target="_blank" rel="noopener">news.ltn.com.tw</a></li>
+        <li>中時，〈松機變身AI園區？李四川力挺蔣萬安：雙北科技廊帶可望成形〉，2026-10-08。<a href="https://www.chinatimes.com/realtimenews/20261008005192-260407" target="_blank" rel="noopener">chinatimes.com</a></li>
+        <li>民報，〈童子賢反對遷松機 點名淡海新市鎮蓋AI園區〉。<a href="https://www.peoplenews.tw/articles/economic-news/61318" target="_blank" rel="noopener">peoplenews.tw</a></li>
+        <li>台北市政府，「AI黃金世紀，從臺北開始」官方網站。<a href="https://ai2033.taipei/" target="_blank" rel="noopener">ai2033.taipei</a></li>
+        <li>自由時報，〈蘇巧慧提AI園區設淡海科學城 李四川喊AI科技廊帶打團體戰〉，2026-10-12。<a href="https://news.ltn.com.tw/news/NewTaipei/breakingnews/5603020" target="_blank" rel="noopener">news.ltn.com.tw</a></li>
       </ol>
     </div>
     松山機場遷建與AI園區可行性評估 · 文字整理自公開新聞報導與歷史評估資料，並經AI輔助分析 · 推論不等於官方結論，請以最新官方公告為準
